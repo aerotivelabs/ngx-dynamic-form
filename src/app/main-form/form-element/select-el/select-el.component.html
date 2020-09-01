@@ -1,0 +1,5 @@
+<div [formGroup]="mainForm">
+  <select [formControlName]="selectEl.name">
+    <option  value="option" *ngFor="let opt of selectEl.content">{{opt}}</option>
+  </select>
+</div>

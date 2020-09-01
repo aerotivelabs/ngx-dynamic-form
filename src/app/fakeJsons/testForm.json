@@ -1,0 +1,33 @@
+{
+  "formGroup": [{
+    "type": "input",
+    "name": "name",
+    "content": "text",
+    "placeholder": "1. input",
+    "validator": ["required", "4"]
+  }, {
+    "type": "input",
+    "name": "surname",
+    "content": "text",
+    "placeholder": "200. input",
+    "validator": ["required", "4"]
+  }, {
+    "type": "select",
+    "content": ["600rr", "1000rr", "cb650","cbr600f","1100xx"],
+    "name": "hondaSelect",
+    "placeholder": "honda",
+    "validator": ["required"]
+  }, {
+    "type": "input",
+    "content": "text",
+    "name": "bikeBrand",
+    "placeholder": "3. input",
+    "validator": ["not required", "1234"]
+  }, {
+    "type": "select",
+    "content": ["mt07", "mt09", "mt10"],
+    "name": "yamahaSelect",
+    "placeholder": "yamaha",
+    "validator": []
+  }]
+}

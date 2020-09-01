@@ -1,0 +1,46 @@
+{
+    "formGroup": [
+        {
+            "type":"text",
+            "validators":["required","maxlength"],
+            "placeholder":"Enter your name",
+            "helpText":"Exm: Mehmet Gani",
+            "bindingValue":"model.colum",
+            "formatter":"REGEX or ###.###.##",
+            "options": ["RangeOption{max,min}"]
+        },
+        {
+            "selector":"#country",
+            "type":"select",
+            "validators":["required"],
+            "placeholder":"Select country",
+            "helpText":"Exm: Turkey gibi",
+            "bindingItems":["Array","APIUrl"],
+            "bindingText": ["column","column2"],
+            "bindinValue":"model.id",
+            "cascading": "#state ?"
+        },
+        {
+            "selector":"#state",
+            "type":"select",
+            "validators":["required"],
+            "placeholder":"Select state",
+            "helpText":"Exm: Adana gibi",
+            "bindingItems":["Array","APIUrl"],
+            "bindingText": ["column","column2"],
+            "bindinValue":"model.id",
+            "cascading":"#country ?"
+        }
+
+    ],
+    "model": [{
+        "id":"1",
+        "column": "A",
+        "column2":"B"
+    },
+    {
+        "id":"2",
+        "column": "C",
+        "column2":"D"
+    }]
+}

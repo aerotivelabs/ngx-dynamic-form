@@ -1,0 +1,4 @@
+<form [formGroup]="mainForm">
+  <app-form-element *ngFor="let el of Data" [El]=el [mainForm] = "mainForm"></app-form-element>
+</form>
+
